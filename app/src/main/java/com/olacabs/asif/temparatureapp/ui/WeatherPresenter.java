@@ -23,6 +23,10 @@ public class WeatherPresenter implements WeatherActivtyContract.Presenter {
   private ApiInterface mApiInterface;
   private final WeatherActivtyContract.View mWeatherActivityView;
 
+  /**
+   * Function
+   * @param weatherActivityView
+   */
 
   public WeatherPresenter(@NonNull WeatherActivtyContract.View weatherActivityView){
     mWeatherActivityView = checkNotNull(weatherActivityView,"view cannot be null");
