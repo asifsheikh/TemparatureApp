@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import com.olacabs.asif.temparatureapp.R;
 import static com.google.common.base.Preconditions.checkNotNull;
 import com.olacabs.asif.temparatureapp.ui.WeatherActivtyContract.Presenter;
@@ -18,6 +19,8 @@ public class WeatherActivity extends AppCompatActivity implements WeatherActivty
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    dialog = new ProgressDialog(this);
+    dialog.setMessage("Loading");
     mgetTemperatureButton = findViewById(R.id.button);
     mgetTemperatureButton.setOnClickListener(this);
     new WeatherPresenter(this);
@@ -47,12 +50,14 @@ public class WeatherActivity extends AppCompatActivity implements WeatherActivty
 
   @Override
   public void showProgressDialog() {
-
+      if(!dialog.isShowing())
+        dialog.show();
   }
 
   @Override
   public void hideProgressDialog() {
-
+    if(dialog.isShowing())
+      dialog.dismiss();
   }
 
   @Override
@@ -62,6 +67,6 @@ public class WeatherActivity extends AppCompatActivity implements WeatherActivty
 
   @Override
   public void showCurrentTemperature(int temperature) {
-
+    ((EditText)findViewById(R.id.current_temp_text_view)).setText(""+ temperature + "\u00B0C");
   }
 }

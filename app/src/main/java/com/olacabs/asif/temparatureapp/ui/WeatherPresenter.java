@@ -5,6 +5,7 @@ import android.util.Log;
 import com.olacabs.asif.temparatureapp.model.WeatherDataModel;
 import com.olacabs.asif.temparatureapp.network.ApiClient;
 import com.olacabs.asif.temparatureapp.network.ApiInterface;
+import com.olacabs.asif.temparatureapp.utils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -43,6 +44,9 @@ public class WeatherPresenter implements WeatherActivtyContract.Presenter {
       public void onResponse(Call<WeatherDataModel> call, Response<WeatherDataModel> response) {
         mWeatherDataModel = response.body();
         Log.i(TAG,"Successfully got the response " + mWeatherDataModel.getMcurrently().getMtemperature());
+        int temp = utils.convertFahrenheitToCelcius(Float.valueOf(mWeatherDataModel.getMcurrently().getMtemperature()));
+        mWeatherActivityView.showCurrentTemperature(temp);
+        mWeatherActivityView.hideProgressDialog();
       }
 
       @Override
