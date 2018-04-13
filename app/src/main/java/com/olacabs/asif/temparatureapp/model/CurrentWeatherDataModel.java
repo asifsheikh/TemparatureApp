@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class CurrentWeatherDataModel {
+
   @SerializedName("time")
   private String mtime;
   @SerializedName("summary")

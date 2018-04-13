@@ -24,7 +24,7 @@ public class WeatherPresenter implements WeatherActivtyContract.Presenter {
   private final WeatherActivtyContract.View mWeatherActivityView;
 
   /**
-   * Function
+   * Constructor for presentor class
    * @param weatherActivityView
    */
 
