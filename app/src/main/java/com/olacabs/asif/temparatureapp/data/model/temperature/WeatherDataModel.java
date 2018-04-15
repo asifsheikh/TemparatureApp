@@ -1,6 +1,7 @@
-package com.olacabs.asif.temparatureapp.model;
+package com.olacabs.asif.temparatureapp.data.model.temperature;
 
 import com.google.gson.annotations.SerializedName;
+import com.olacabs.asif.temparatureapp.data.model.temperature.CurrentWeatherDataModel;
 
 /**
  * Created by asif.shaikh2 on 27/03/18.

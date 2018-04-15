@@ -1,6 +1,6 @@
 package com.olacabs.asif.temparatureapp.network;
 
-import com.olacabs.asif.temparatureapp.utils;
+import com.olacabs.asif.temparatureapp.util.utils;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 

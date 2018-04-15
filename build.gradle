@@ -39,4 +39,8 @@ ext {
     rulesVersion = '1.0.1'
     espressoVersion = '3.0.1'
     roomVersion = "1.0.0"
+    stethoOkhttpVersion = "1.4.2"
+    dbflowVersion = "4.0.0-beta5"
+    butterKnifeVersion = "8.5.1"
+    parcelerVersion = "1.1.6"
 }

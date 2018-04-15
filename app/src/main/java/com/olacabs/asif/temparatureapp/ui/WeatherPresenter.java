@@ -2,10 +2,10 @@ package com.olacabs.asif.temparatureapp.ui;
 
 import android.support.annotation.NonNull;
 import android.util.Log;
-import com.olacabs.asif.temparatureapp.model.WeatherDataModel;
+import com.olacabs.asif.temparatureapp.data.model.temperature.WeatherDataModel;
 import com.olacabs.asif.temparatureapp.network.ApiClient;
 import com.olacabs.asif.temparatureapp.network.ApiInterface;
-import com.olacabs.asif.temparatureapp.utils;
+import com.olacabs.asif.temparatureapp.util.utils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

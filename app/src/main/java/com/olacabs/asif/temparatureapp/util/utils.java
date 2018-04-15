@@ -1,4 +1,4 @@
-package com.olacabs.asif.temparatureapp;
+package com.olacabs.asif.temparatureapp.util;
 
 /**
  * Created by asif.shaikh2 on 27/03/18.

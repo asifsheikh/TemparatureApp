@@ -1,6 +1,6 @@
 package com.olacabs.asif.temparatureapp.network;
 
-import com.olacabs.asif.temparatureapp.model.WeatherDataModel;
+import com.olacabs.asif.temparatureapp.data.model.temperature.WeatherDataModel;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

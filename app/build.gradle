@@ -25,8 +25,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+
     compile "com.google.guava:guava:$rootProject.guavaVersion"
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile "com.facebook.stetho:stetho:${stethoOkhttpVersion}"
+    compile "com.facebook.stetho:stetho-okhttp3:${stethoOkhttpVersion}"
+
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+    annotationProcessor "org.parceler:parceler:${parcelerVersion}"
 }
